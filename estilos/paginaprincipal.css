@@ -88,23 +88,23 @@ header {
 .front {
     background-image: url("../imagens/imagemdafrente/imgdestaque2.jpg");
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right center;
     background-size: cover;
-    margin: auto;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
 
-    margin: auto;
-    height: 40vh;
+    min-height: 40vh;
 }
 
 
-main h1 {
+.front h1 {
     font-family: var(--roboto);
     font-size: 3em;
     font-weight: bolder;
 
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+
+    min-height: 20vh;
 }
 @media (max-width: 1680px) {
     main h1 {
@@ -168,12 +168,10 @@ main h1 {
         font-size: 1.1em;
     }
 }
-.destaque {
-    padding: 90px 0px 0px 50px;
-}
 .destaque p {
     font-size: 1.5em;
 
+    min-height: 20vh;
     font-family: var(--roboto);
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.534);
 }
