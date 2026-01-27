@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --vermelho-sa: #ffae00; /* vermelho principal */
+  --vermelho-sa: #e21133; /* vermelho principal */
   --azul-escuro-sa:#003087; /* azul mais escuro */
   --azul-medio-sa: #0047BB; /* azul médio */
   --branco: #FFFFFF; /* fundo ou contraste */
@@ -19,7 +19,7 @@
 
   --roboto: 'Roboto', sans-serif;
 }
-/*#e21133*/
+
 body {
     
 }
@@ -84,7 +84,7 @@ header {
     border-radius: 10px;
 }
 .front {
-    background-image: url("/imagens/imagemdafrente/imgdestaque2.jpg");
+    background-image: url("../imagens/imagemdafrente/imgdestaque2.jpg");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
@@ -132,7 +132,7 @@ main h1 {
     .links a {
         font-size: 1.2em;
 
-        padding: 5px 5px;
+        padding: 10px 15px;
     }
 }
 @media (max-width: 760px) {
