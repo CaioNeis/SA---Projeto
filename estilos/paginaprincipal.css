@@ -75,6 +75,8 @@ header {
     display: inline-block;
 
     transition: 0.6s;
+
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
 }
 #linkwp {
     background-color: var(--verdeescuro);
@@ -95,6 +97,7 @@ header {
     margin: auto;
     height: 45vh;
 }
+
 
 main h1 {
     font-family: var(--roboto);
@@ -140,6 +143,10 @@ main h1 {
         padding: 5px 5px 0px 5px;
         font-size: 1.1em;
     }
+    .front {
+        background-image: url("/imagens/imagemdafrente/imgdestaque2.jpg");
+        background-position: center center;
+    }
 }
 @media (max-width: 370px) {
     main h1 {
@@ -154,5 +161,37 @@ main h1 {
     }
 }
 .destaque {
-    padding: 50px 0px 0px 50px;
+    padding: 90px 0px 0px 50px;
+}
+.destaque p {
+    font-size: 1.5em;
+
+    font-family: var(--roboto);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.534);
+}
+
+.linkfrente {
+    display: inline-block;
+
+    background-color: red;
+
+    padding: 10px;
+
+    border-radius: 8px;
+}
+.linkfrente a {
+    text-decoration: none;
+
+    font-family: var(--roboto);
+    font-weight: bold;
+    font-size: 1.4em;
+    
+    color: var(--branco);
+    
+}
+.linksfrente {
+    margin-left: 50px;
+}
+#linkfrente2 {
+    background-color: var(--verdeescuro);
 }
