@@ -95,7 +95,7 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
 
     margin: auto;
-    height: 45vh;
+    height: 40vh;
 }
 
 
@@ -159,6 +159,10 @@ main h1 {
 }
     .destaque {
         padding: 10px 0px 0px 10px;
+    }
+
+    .front {
+        background-attachment: fixed;    
     }
     .links a {
         font-size: 1.1em;
