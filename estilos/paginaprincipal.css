@@ -45,6 +45,12 @@ header {
     padding: 0px 0px 25px 0px;
     
 }
+.links a:hover {
+    background-color: #ee6881f6;
+
+    border-radius: 10px;
+
+}
 @media (max-width: 1150px) {
 
     .logo {
@@ -70,6 +76,7 @@ header {
 
     display: inline-block;
 
+    transition: 0.6s;
 }
 #linkwp {
     background-color: var(--verdeescuro);
@@ -102,17 +109,28 @@ main h1 {
     main h1 {
         font-size: 2.6em;
     }
+    .links a {
+        font-size: 1.4em;
+    }
 }
 @media (max-width: 1440px) {
     main h1 {
         font-size: 2.3em;
     }
+    .links a {
+        font-size: 1.3em;
+    }
 }
+
 @media (max-width: 1024px) {
     main h1 {
         font-size: 2em;
     }
+    .links a {
+        font-size: 1.3em;
+    }
 }
+
 @media (max-width: 370px) {
     main h1 {
         font-size: 1.5em;
@@ -120,6 +138,9 @@ main h1 {
 }
     .destaque {
         padding: 10px 0px 0px 10px;
+    }
+    .links a {
+        font-size: 1.2em;
     }
 }
 .destaque {
