@@ -91,8 +91,13 @@ header {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
 }
 .links a:hover {
-    background-color: #dfd6d8f6;
-    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.938);
+    border-radius: 10px;
+
+}
+.links a#lwtp:hover {
+    box-shadow: 0px 0px 20px var(--verdewp);
+    border-radius: 15px;
 
 }
 #lwtp {
@@ -162,7 +167,21 @@ header h1 {
 
     padding: 30px 20px 50px 10px;
     border-radius: 8px;
+
 }
+.linkfrente .a1:hover {
+    box-shadow: 0px 0px 20px var(--vermelho-sa);
+    border-radius: 10px;
+    
+
+}
+.linkfrente .a2:hover {
+    box-shadow: 0px 0px 20px var(--verdeescuro);
+    border-radius: 10px;
+
+}
+
+
 .linkfrente a.a1 {
     text-decoration: none;
 
@@ -175,6 +194,8 @@ header h1 {
     color: var(--branco);
     background-color: var(--vermelho-sa);
     border-radius: 10px;
+
+    transition: 0.3s;
 }
 .linkfrente a.a2 {
     text-decoration: none;
@@ -188,16 +209,20 @@ header h1 {
     margin: 0px 30px;
     color: var(--branco);
     background-color: var(--verdeescuro);
+
+    transition: 0.3s;
     
 }
 
-.categorias {
+
+
+.categorias1 {
     background-color: var(--branco);
     padding: 10px;
     
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.300);
 }
-.categorias h1 {
+.categorias1 h1 {
     font-family: var(--Black);
     font-weight: bolder;
     color: var(--vermelho-sa);
@@ -210,10 +235,10 @@ header h1 {
     margin: 30px;
     
 }
-.categorias a {
+.categorias1 a {
     text-decoration: none;
 }
-.subcategorias {
+.subcategorias1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -221,7 +246,103 @@ header h1 {
 
 }
 
-.subcategorias p {
+.subcategorias1 p {
+    text-decoration: none;
+    margin: 10px;
+    
+    text-align: center;
+
+    font-family: var(--Black);
+    font-size: 1.7em;
+    font-weight: 500;
+}
+.subcategorias1 a {
+    color: black;
+}
+.c1div1 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+.c1div1:hover {
+    transform: scale(1.1);
+}
+
+.c1div2 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+    overflow: hidden;
+    transition: 0.5s;    
+}
+.c1div2:hover {
+    transform: scale(1.1);
+}
+.c1div3 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+    overflow: hidden;
+    transition: 0.5s;
+        
+}
+.c1div3:hover {
+    transform: scale(1.1);
+}
+.c1div4 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+    overflow: hidden;
+    transition: 0.5s;
+        
+}
+.c1div4:hover {
+    transform: scale(1.1);
+}
+.categorias1 img {
+    max-height: 250px;
+    max-width: 300px;
+
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*asjdbfkjbkwjbfksdwsdfkçsdjbfkiasdclvkiçsdjf*/
+
+.categorias2 {
+    background-color: var(--branco);
+    padding: 10px;
+    
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.300);
+
+}
+.categorias2 h1 {
+    font-family: var(--Black);
+    font-weight: bolder;
+    color: var(--vermelho-sa);
+
+    display: flex;
+    justify-content: left;
+
+    padding-left: 10px;
+
+    margin: 30px;
+    
+}
+.categorias2 a {
+    text-decoration: none;
+}
+.subcategorias2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    margin-bottom: 50px;
+
+
+}
+
+.subcategorias2 p {
     text-decoration: none;
     margin: 10px;
     
@@ -231,57 +352,153 @@ header h1 {
     font-size: 1.5em;
     font-weight: 500;
 }
-.cdiv1 {
+.c2div1 {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
     overflow: hidden;
     transition: 0.5s;
-    
+
+
+    .produto {
+        font-family: var(--Anton);
+        font-size: 1.6em;
+        margin: 5px;
+        color: black;    
+    }   
+
+    .valor {
+        font-weight: bolder;
+        font-size: 2em;
+        text-shadow: 0px 0px 1px black;
+
+        color: var(--vermelho-sa);
+        
+        
+
+} 
+    .parcelas {
+        font-size: 1.2em;
+
+        color: rgb(58, 58, 58);
+    }
+        .S {
+            
+        }
+
+        .R {
+            
+        }
 }
-.cdiv1:hover {
-    transform: scale(1.1);
-}
-.subcategorias img {
-    
+.valor:hover {
+    text-decoration: underline;
 }
 
-.subcategorias:hover {
+.c2div1:hover {
+    transform: scale(1.1);
+}
+    
 
-}
-.cdiv2 {
+.c2div2 {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
     overflow: hidden;
-    transition: 0.5s;    
+    transition: 0.5s;   
+    
+    
+    .produto {
+        font-family: var(--Anton);
+        font-size: 1.6em;
+        margin: 5px;
+        color: black;    
+    }   
+
+    .valor {
+        font-weight: bolder;
+        font-size: 2em;
+        text-shadow: 0px 0px 1px black;
+
+        color: var(--azul-medio-sa);
+    } 
+    .parcelas {
+        font-size: 1.2em;
+
+        color: rgb(58, 58, 58);
+    }
 }
-.cdiv2:hover {
+
+.c2div2:hover {
     transform: scale(1.1);
 }
-.cdiv3 {
+.c2div3 {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
     overflow: hidden;
     transition: 0.5s;
+
+
+    .produto {
+        font-family: var(--Anton);
+        font-size: 1.6em;
+        margin: 5px;
+        color: black;    
+    }   
+
+    .valor {
+        font-weight: bolder;
+        font-size: 2em;
+        text-shadow: 0px 0px 1px black;
+
+        color: var(--vermelho-sa);
+    } 
+    .parcelas {
+        font-size: 1.2em;
+
+        color: rgb(58, 58, 58);
+    }
         
 }
-.cdiv3:hover {
+.c2div3:hover {
     transform: scale(1.1);
 }
-.cdiv4 {
+.c2div4 {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
     overflow: hidden;
     transition: 0.5s;
+
+
+    .produto {
+        font-family: var(--Anton);
+        font-size: 1.6em;
+        margin: 5px;
+        color: black;    
+    }   
+
+    .valor {
+        font-weight: bolder;
+        font-size: 2em;
+        text-shadow: 0px 0px 1px black;
+
+        color: var(--azul-medio-sa);
+    } 
+    .parcelas {
+        font-size: 1.2em;
+
+        color: rgb(58, 58, 58);
+    }
         
 }
-.cdiv4:hover {
+.c2div4:hover {
     transform: scale(1.1);
 }
-.categorias img {
+.categorias2 img {
     max-height: 250px;
     max-width: 300px;
 
     border-radius: 10px 10px 0px 0px;
 }
+
+
+
 
 
