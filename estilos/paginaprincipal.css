@@ -39,10 +39,12 @@ header {
 .nomeloja {
     font-family:var(--Black);
     font-weight: 900;
-    font-size: 4em;
+    font-size: 4.5em;
     color: #1a1919;
 
     margin-bottom: 100px;
+
+    transition: 0.5s;
 }
 
 .divlogo {
@@ -96,6 +98,18 @@ header {
         padding: 5px 20px;
         margin: 7px;
     }
+    .nomeloja {
+        font-size: 4.2em;
+        margin-bottom: 90;
+
+    }
+    .contentp h1 {
+        font-size: 2.8em;
+    }
+    
+    
+   
+
 }
 @media (max-width: 1100px) {
     .links a {
@@ -103,7 +117,21 @@ header {
         padding: 5px 10px;
         margin: 5px;
     }
+
+    .nomeloja {
+        font-size: 4em;
+        
+    }
+    .contentp {
+    padding: 50px 0px 0px 50px;
+
 }
+    .front {
+        background-position: left center;
+    }
+}
+
+
 @media (max-width: 910px) {
     .links a {
         font-size: 1.1em;
@@ -118,7 +146,7 @@ header {
     .links a {
         font-size: 0.9em;
         padding: 2px 0px;
-        margin: 1;
+        margin: 5px;
     }
     .links {
         
@@ -136,7 +164,8 @@ header {
 }
 @media (max-width: 530px) {
     .links a {
-        font-size: 0.8em;
+        font-size: 0.9em;
+        font-weight: bold;
         
         
     }
@@ -168,10 +197,9 @@ header {
     background-position: right center;
     background-size: cover;
 
-    display: flex;
-    align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
     min-height: 70vh;
+    
 }
 .contentp {
     padding: 70px 0px 0px 70px;
@@ -188,20 +216,13 @@ A {
 #ELETRO {
     color: var(--azul-escuro-sa);
 }
-header h1 {
-    text-align: center;
-    font-size: 7em;
-    font-weight: 700;
-    font-family: var(--Anton);
-    color: var(--branco);
-    
-}
+
 .marca {
     vertical-align: top;
     font-size: 0.4em;
 }
 
-.front h1 {
+.contentp h1 {
     font-family: var(--roboto);
     font-size: 3em;
     font-weight: bolder;
@@ -271,7 +292,12 @@ header h1 {
 
     transition: 0.3s;
     
+    img {
+        width: 40px;
+    }
+    
 }
+
 
 
 
