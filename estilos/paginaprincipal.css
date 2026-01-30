@@ -54,6 +54,8 @@ header {
     margin: auto;
     display: block;
 
+    transition: 0.5s;
+
 }
 .navbar {
     background-color: #a10f27; 
@@ -108,17 +110,37 @@ header {
         padding: 2px 0px;
         margin: 4px;
     }
+    .imglogo {
+        width: 180px;
+    }
 }
 @media (max-width: 730px) {
     .links a {
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 2px 0px;
         margin: 1;
     }
+    .links {
+        
+    }
+    a#lwtp {
+        
+        padding: 5px;
+        border-radius: 7px;
+    }
+    .imglogo {
+        width: 150px;
+        
+    }
+    
 }
 @media (max-width: 530px) {
     .links a {
-        font-size: 0.7em;
+        font-size: 0.8em;
+        
+        
+    }
+    .links {
         
     }
 }
