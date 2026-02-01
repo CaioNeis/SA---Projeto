@@ -231,8 +231,9 @@ header {
     margin: 10px;
     text-align: center;
     font-family: var(--Black);
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: 500;
+    color: black;
 }
 
 .c1div1, .c1div2, .c1div3, .c1div4 {
@@ -282,7 +283,7 @@ header {
     margin: 10px;
     text-align: center;
     font-family: var(--Black);
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 500;
 }
 
@@ -453,10 +454,13 @@ header {
         align-items: center;
         gap: 15px;
     }
-
+    .a2 img {
+        width: 300px;
+        background-color: red;  
+    }
     .linkfrente a.a1,
     .linkfrente a.a2 {
-        width: 80%;
+        width: 70%;
         text-align: center;
         margin: 0;
     }
@@ -468,6 +472,10 @@ header {
 
     .front {
         background-position: center;
+    }
+    .subcategorias1 p {
+        font-size: 1.3em;
+        
     }
 }
 
@@ -489,7 +497,7 @@ header {
     }
 
     .links {
-        display: flex;
+        
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -498,11 +506,10 @@ header {
         font-size: 1.1em;
         padding: 6px 12px;
         margin: 4px;
+        vertical-align: middle;
     }
 
-    #lwtp {
-        padding: 10px 15px;
-    }
+    
 
     .categorias1 h1,
     .categorias2 h1 {
@@ -514,6 +521,10 @@ header {
     .subcategorias2 {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     }
+    .links a#lwtp {
+        padding: 10px;
+        border-radius: 8px;
+}
 
     .categorias1 img,
     .categorias2 img {
@@ -532,8 +543,27 @@ header {
     .parcelas {
         font-size: 1em !important;
     }
+    .subcategorias1 p {
+        font-size: 1.2em;
+        
+    }
 }
 
+@media (max-width: 650px) { /*TEMPORARIO*/
+    .links {
+        
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .links a {
+        font-size: 0.8em;
+        padding: 2px 4px;
+        margin: 2px;
+        
+    }
+
+}
 /* Celulares pequenos */
 @media (max-width: 480px) {
     
@@ -554,12 +584,17 @@ header {
     .linkfrente a.a2 {
         font-size: 1.1em;
         padding: 10px 15px;
-        width: 90%;
+        width: 70%;
     }
 
     .links a {
-        font-size: 1em;
-        padding: 6px 10px;
+        font-size: 0.7em;
+        padding: 2px 4px;
     }
+
+     .links a#lwtp {
+        padding: 5px;
+        border-radius: 5px;
+}
 }
 
