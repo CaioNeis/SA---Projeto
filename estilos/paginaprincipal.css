@@ -397,10 +397,6 @@ header {
 
 /* Tablets landscape / notebooks menores */
 @media (max-width: 1024px) {
-    main {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
 
     .nomeloja {
         font-size: 2.8em;
@@ -448,10 +444,7 @@ header {
 
 /* Tablets portrait / celulares grandes */
 @media (max-width: 768px) {
-    main {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+    
 
     .nomeloja {
         font-size: 2.4em;
@@ -509,10 +502,7 @@ header {
 
 /* Celulares pequenos */
 @media (max-width: 480px) {
-    main {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+    
 
     .nomeloja {
         font-size: 2em;
