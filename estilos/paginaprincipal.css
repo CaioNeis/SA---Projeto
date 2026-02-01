@@ -311,10 +311,16 @@ header {
 .c2div3 .valor { color: var(--vermelho-sa); }
 .c2div4 .valor { color: var(--azul-medio-sa); }
 
-.valor {
+.subcategorias2 .valor {
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 1.6em;
     text-shadow: 0px 0px 1px black;
+}
+.subcategorias2 .valor:hover {
+    text-decoration: underline;
+}
+.subcategorias2 img {
+    
 }
 
 .parcelas {
@@ -323,8 +329,8 @@ header {
 }
 
 .categorias2 img {
-    max-height: 250px;
-    max-width: 300px;
+    height: 300px;
+    max-width: 360px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -408,8 +414,8 @@ header {
 
     .categorias1 img,
     .categorias2 img {
-        max-width: 260px;
-        max-height: 220px;
+        
+        
     }
     .front {
         min-height: 50vh;
