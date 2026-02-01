@@ -543,7 +543,7 @@ header {
     }
 
     .valor {
-        font-size: 1.7em !important;
+        font-size: 1.7em;
     }
 
     .parcelas {
@@ -608,6 +608,9 @@ header {
      .links a#lwtp {
         padding: 5px;
         border-radius: 5px;
+    }
+    .subcategorias2 .valor {
+        font-size: 1.4em;
     }
 }
 
