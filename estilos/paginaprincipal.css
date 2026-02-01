@@ -504,7 +504,7 @@ header {
     }
 
     .links {
-        
+        padding: 10px 0px;
         flex-wrap: wrap;
         justify-content: center;
     }
