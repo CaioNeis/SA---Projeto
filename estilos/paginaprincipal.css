@@ -32,6 +32,9 @@
 body {
     font-family: var(--roboto);
 }
+body a {
+    text-decoration: none;
+}
 
 main {
     margin: 0 auto;
@@ -220,7 +223,7 @@ header {
 
 .subcategorias1 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
 }
 
@@ -237,6 +240,7 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
     overflow: hidden;
     transition: 0.5s;
+    background-color: #fff;
 }
 
 .c1div1:hover, .c1div2:hover, .c1div3:hover, .c1div4:hover {
@@ -245,9 +249,10 @@ header {
 
 .categorias1 img {
     max-height: 250px;
-    max-width: 300px;
+    max-width: 360px;
     border-radius: 10px 10px 0px 0px;
 }
+
 
 /* Produtos em destaque */
 .categorias2 {
@@ -286,10 +291,12 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
     overflow: hidden;
     transition: 0.5s;
+    background-color: #fff;
 }
 
 .c2div1:hover, .c2div2:hover, .c2div3:hover, .c2div4:hover {
     transform: scale(1.1);
+    background-color: #fff;
 }
 
 .c2div1 .produto, .c2div2 .produto, .c2div3 .produto, .c2div4 .produto {
