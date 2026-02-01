@@ -67,11 +67,10 @@ header {
     top: 0px;
     box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.185);
     z-index: 10;
-}
-
-.links {
     text-align: center;
 }
+
+
 
 .links a {
     padding: 5px 30px;
@@ -572,6 +571,9 @@ header {
     .imglogo {
         transition: 0.5s;
         width: 135px;
+    }
+    .navbar {
+        top: -100px;
     }
 
 }
