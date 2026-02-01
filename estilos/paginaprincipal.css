@@ -146,6 +146,7 @@ header {
     font-size: 3em;
     font-weight: bolder;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+    margin-bottom: 25px;
     
 }
 
@@ -477,6 +478,9 @@ header {
         font-size: 1.3em;
         
     }
+    .nomeloja {
+        font-size: 3em;
+    }
 }
 
 /* Tablets portrait / celulares grandes */
@@ -484,12 +488,15 @@ header {
     
 
     .nomeloja {
-        font-size: 2.4em;
+        font-size: 2.5em;
     }
     .contentp {
         padding: 30px 15px 15px;
         margin: 0;
         text-align: center;
+    }
+    .contentp h1 {
+        font-size: 2em;
     }
 
     .imglogo {
@@ -557,10 +564,14 @@ header {
     }
 
     .links a {
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 2px 4px;
         margin: 2px;
         
+    }
+    .imglogo {
+        transition: 0.5s;
+        width: 135px;
     }
 
 }
@@ -588,13 +599,13 @@ header {
     }
 
     .links a {
-        font-size: 0.7em;
+        font-size: 0.8em;
         padding: 2px 4px;
     }
 
      .links a#lwtp {
         padding: 5px;
         border-radius: 5px;
-}
+    }
 }
 
