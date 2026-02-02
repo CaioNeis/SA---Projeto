@@ -482,6 +482,7 @@ header {
     .nomeloja {
         font-size: 3em;
     }
+    
 }
 
 /* Tablets portrait / celulares grandes */
@@ -569,9 +570,7 @@ header {
     .subqs .qs2 {
         width: 100%;
     }
-    .qs1 a {
-        background-color: #fff;
-    }
+    
 
 }
 
@@ -632,6 +631,20 @@ header {
     .subcategorias2 .valor {
         font-size: 1.4em;
     }
+    .qs .subqs .qs1 a  {
+        font-size: 1.4em;
+        padding: 3px 5px;
+        border-radius: 10px;
+    }
+    .qs .subqs .qs1 p {
+        font-size: 1.3em;
+    }
+    .subqs .qs1 h2 {
+        font-size: 2.2em;
+    }
+    .subqs .qs2 p {
+        font-size: 1.3em;
+    }
 }
 
 .qs {
@@ -658,6 +671,8 @@ header {
     padding: 10px;
 }
 .qs1 p {
+    
+    display: grid;
     font-size: 1.5em;
     padding: 10px;
     margin-bottom: 10px;
@@ -666,7 +681,7 @@ header {
     color: var(--branco);
     font-size: 1.8em;
     padding: 10px;
-    border-radius: 7px;
+    border-radius: 15px;
     background-color: var(--verdeescuro);
 }
 .qs2 {
@@ -680,11 +695,12 @@ header {
 }
 
 .qs2 p {
+    display: grid;    
     justify-content: center;
     margin: 10px;
     display: flex;
     font-size: 1.5em;
-    text-align: justify;
+    
 }
 
 
