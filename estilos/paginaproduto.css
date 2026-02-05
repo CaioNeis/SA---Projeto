@@ -351,18 +351,19 @@ main {
     }
     .entrega {
         font-size: 1.2em;
+        text-align: center;
     }
     
     .descricaop h2 {
-        font-size: 1.5em;
-        margin: 5px;
+        font-size: 1.3em;
+        margin: 2px;
         padding: 0px;
     }
     .descricaop ul {
         columns: 1;
 }
     .descricaop li {
-        font-size: 1.3em;
+        font-size: 1.2em;
         color: rgb(82, 82, 82);
         text-indent: 10px;
 
