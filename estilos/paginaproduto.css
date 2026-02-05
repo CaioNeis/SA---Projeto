@@ -355,7 +355,7 @@ main {
     }
     
     .descricaop h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin: 2px;
         padding: 0px;
     }
@@ -363,7 +363,7 @@ main {
         columns: 1;
 }
     .descricaop li {
-        font-size: 1.2em;
+        font-size: 1.1em;
         color: rgb(82, 82, 82);
         text-indent: 10px;
 
