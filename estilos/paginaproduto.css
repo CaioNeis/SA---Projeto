@@ -96,7 +96,7 @@ main {
 }
 .produtoimg {
     flex: 1;
-    display: flex;
+    display: block;
     align-items: stretch;
 
 }
@@ -307,7 +307,7 @@ main {
     gap: 10px;
     font-family: var(--roboto);
     font-size: 1.3em;
-    color: rgb(60, 60, 60,);
+    color: rgb(60, 60, 60);
 }
 .qs2 .img1 p,
 .qs2 .img2 p,
@@ -369,6 +369,20 @@ main {
 
     }
 }
+
+
+footer {
+    text-align: center;
+    font-size:1.2em; 
+    color:#5f5f5ffd; 
+    padding:10px;
+}
+@media (max-width: 768px) {
+    footer {
+        font-size: 1em;
+    }
+}
+
 
 
 
