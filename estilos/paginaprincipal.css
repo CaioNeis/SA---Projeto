@@ -29,6 +29,9 @@
    LAYOUT BASE E CONTAINER PRINCIPAL
    ============================================= */
 
+html {
+    
+}
 body {
     font-family: var(--roboto);
 }
@@ -774,7 +777,6 @@ a.lwtp:hover {
     font-size: 1.5em;
     
 }
-
 
 
 
