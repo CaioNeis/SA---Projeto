@@ -73,6 +73,15 @@ header {
     'GRAD' 0,
     'opsz' 24;
 }
+.ajuda {
+    transition: 0.3;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--Black);
+    font-size: 1.5em;
+    color: var(--azul-medio-sa);
+font-weight: 700;    
+}
 .div2 {
     display: grid;
     justify-items: auto;
@@ -181,7 +190,9 @@ main {
     transition: 0.5;
 }
 .we .wtzp:hover {
-    box-shadow: 0px 0px 10px var(--verdewp);
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    box-shadow: 0 0px 10px var(--verdeescuro);
 }
 
 .descricaop {
@@ -299,7 +310,7 @@ main {
     background-color: var(--branco);
     padding: 20px;
     border-radius: 10px;
-    margin: 20px 0px;
+    margin-top: 50px;
 }
 .qs2 .img1, .img2, .img3 {
     display: flex;
@@ -330,6 +341,18 @@ main {
         flex-direction: column;
         margin: 10px;
     }
+    .ajuda {
+    margin-top: 10px;
+    text-align: center;
+    font-family: var(--Black);
+    font-size: 1.2em;
+    font-weight: norm;
+    margin-bottom: -20px;
+    
+    }
+    .qs2 {
+        margin: 20px 0px;
+}
 }
 
 @media (max-width: 768px) {
@@ -420,7 +443,7 @@ footer {
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.315);
     color: white;
     border: none;
     border-radius: 50%;
