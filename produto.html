@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto | SA Móveis</title>
     <link rel="stylesheet" href="estilos/paginaproduto.css">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Guarda Roupa Casal com Espelho | SA Móveis">
+    <meta property="og:description" content="Guarda Roupa casal com espelho, 3 portas, 4 gavetas, entrega grátis em Teresina e Timon.">
+    <meta property="og:image" content="https://caioneis.github.io/SA---Projeto/imagens/imgp/roupeiro.jpeg">
+    <meta property="og:url" content="https://caioneis.github.io/SA---Projeto/produto.html">
+
+<!-- Opcional, mas ajuda -->
+<meta property="og:site_name" content="SA Móveis e Eletro">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
 
     
@@ -35,7 +43,7 @@
             <div class="div2">
 
                 <div class="nomep">
-                    <h1 class="nome">Guarda Roupa Casal com Espelho</h1>
+                    <h1 id="nome-produto">Guarda Roupa Casal com Espelho</h1>
                     <p class="preco"><span class="R">R</span><span class="S">$</span> 1.400,00</p>
                     <p class="parcelas">Ou 10x de R$ 160,00 no cartão</p>
                     <p class="descricao">
@@ -44,8 +52,8 @@
 
                     <div class="we">
                         <div class="divw">
-                            <a class="wtzp"
-                               href="https://api.whatsapp.com/send/?phone=5586981373829&text=Olá+somos+da+S.A+Móveis+!+Nos+fale+qual+produto+possui+interesse"
+                            <a class="wtzp" id="bnt-whatsapp"
+                               href="#"
                                target="_blank">
                                 Comprar no WhatsApp
                             </a>
@@ -60,7 +68,7 @@
                 <!-- DESCRIÇÃO -->
                 <div class="descricaop">
                     <h2>Descrições do Produto</h2>
-                    <ul>
+                    <ul id="info-produto">
                         <li>3 Portas</li>
                         <li>4 Gavetas</li>
                         <li>Altura: 208 cm</li>
@@ -156,6 +164,39 @@
 }">
     <p>&copy; 2026 SA - MÓVEIS E ELETRO - TODOS OS DIREITOS RESERVADOS</p>
 </footer>
+
+<script>
+document.getElementById('bnt-whatsapp').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const nomeProduto = document.getElementById('nome-produto').innerText;
+
+    const infos = document.querySelectorAll('#info-produto li');
+    let especificacoes = '';
+    infos.forEach(item => {
+        especificacoes += `- ${item.innerText}\n`;
+    });
+
+    const linkProduto = window.location.href;
+
+    const mensagem = `
+Olá! Vim pelo site da S.A Móveis e me interessei pelo produto:
+
+${nomeProduto}
+
+Especificações:
+${especificacoes}
+
+Link do produto:
+${linkProduto}
+    `.trim("https://caioneis.github.io/SA---Projeto/produto.html");
+
+    const url = `https://api.whatsapp.com/send?phone=5586981373829&text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, '_blank');
+});
+</script>
+
 
 </body>
 </html>

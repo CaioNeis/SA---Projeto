@@ -127,7 +127,7 @@ main {
       
 
 }
-.nome {
+#nome-produto {
     font-family: var(--Black);
     font-size: 3em;
     font-weight: 700;
