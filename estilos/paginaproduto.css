@@ -414,7 +414,7 @@ footer {
 
 /* Setas - só aparecem em desktop */
 .gallery-btn {
-    display: none;           /* escondido por padrão (mobile) */
+               /* escondido por padrão (mobile) */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
