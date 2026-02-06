@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto | SA Móveis</title>
+    <link rel="shortcut icon" href="imagens/logo/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="estilos/paginaproduto.css">
     <meta property="og:type" content="product">
     <meta property="og:title" content="Guarda Roupa Casal com Espelho | SA Móveis">
@@ -180,16 +181,16 @@ document.getElementById('bnt-whatsapp').addEventListener('click', function (e) {
     const linkProduto = window.location.href;
 
     const mensagem = `
-Olá! Vim pelo site da S.A Móveis e me interessei pelo produto:
+👋 Olá! Vim pelo site da *S.A Móveis* e me interessei pelo produto abaixo 👇
 
-${nomeProduto}
+🚪 *${nomeProduto}*
 
-Especificações:
+📋 *Especificações:*
 ${especificacoes}
 
-Link do produto:
+🔗 *Link do produto:*
 ${linkProduto}
-    `.trim("https://caioneis.github.io/SA---Projeto/produto.html");
+`.trim();
 
     const url = `https://api.whatsapp.com/send?phone=5586981373829&text=${encodeURIComponent(mensagem)}`;
 
