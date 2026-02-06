@@ -37,7 +37,20 @@
 
             <!-- IMAGEM -->
             <div class="produtoimg">
-                <img src="imagens/imgp/roupeiroA.jpeg">
+                <div class="gallery-wrapper">
+        <button class="gallery-btn prev" aria-label="Imagem anterior">←</button>
+        
+        <div class="gallery-scroll">
+            <!-- Aqui vão todas as imagens do produto -->
+            <img src="imagens/imgp/produtos1/roupeiroA.jpeg"    alt="Guarda Roupa Panamá cor A">
+            <img src="imagens/imgp/produtos1/roupeiroA1.jpeg"    alt="Guarda Roupa Panamá cor A1">
+            <img src="imagens/imgp/produtos1/roupeiroB.jpeg"    alt="Guarda Roupa Panamá cor B">
+            <img src="imagens/imgp/produtos1/roupeiroB1.jpeg"    alt="Guarda Roupa Panamá cor B2">
+            <!-- coloque quantas quiser -->
+        </div>
+        
+        <button class="gallery-btn next" aria-label="Próxima imagem">→</button>
+    </div>
             </div>
 
             <!-- INFORMAÇÕES -->
@@ -179,7 +192,7 @@ document.getElementById('bnt-whatsapp').addEventListener('click', function (e) {
     const linkProduto = window.location.href;
 
     const mensagem = `
-👋 Olá! Vim pelo site da *S.A Móveis* e me interessei pelo produto abaixo 👇
+👋 Olá! Vim pelo site da *S.A MÓVEIS* e me interessei pelo produto abaixo 👇
 
 🚪 *${nomeProduto}*
 
@@ -196,6 +209,29 @@ ${linkProduto}
 });
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const wrapper = document.querySelector('.gallery-wrapper');
+        if (!wrapper) return;
+
+        const scrollContainer = wrapper.querySelector('.gallery-scroll');
+        const btnPrev = wrapper.querySelector('.prev');
+        const btnNext = wrapper.querySelector('.next');
+
+        if (!scrollContainer || !btnPrev || !btnNext) return;
+
+        function scrollToPrev() {
+            scrollContainer.scrollBy({ left: -scrollContainer.clientWidth, behavior: 'smooth' });
+        }
+
+        function scrollToNext() {
+            scrollContainer.scrollBy({ left: scrollContainer.clientWidth, behavior: 'smooth' });
+        }
+
+        btnPrev.addEventListener('click', scrollToPrev);
+        btnNext.addEventListener('click', scrollToNext);
+    });
+</script>
 
 </body>
 </html>
