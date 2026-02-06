@@ -22,7 +22,7 @@
                 <a href="#">INÍCIO</a>
                 <a href="#">SOBRE</a>
                 <a href="#">LOCALIZAÇÃO</a>
-                 <a id="lwtp" href="https://api.whatsapp.com/send/?phone=5586981373829&text=Olá+somos+da+S.A+Móveis+%21+Nos+fale+qual+produto+possui+interesse%3F&type=phone_number&app_absent=0" target="_blank">FALE NO WHATSAPP</a>
+                 <a id="lwtp" href="#" target="_blank">FALE NO WHATSAPP</a>
             </div>
         </nav>
         <main>
@@ -43,11 +43,11 @@
     
                 <div class="linkfrente">
                 <a class="a1" href="#">Ver Produtos</a>
-                <a class="a2" href="https://api.whatsapp.com/send/?phone=5586981373829&text=Olá+somos+da+S.A+Móveis+%21+Nos+fale+qual+produto+possui+interesse%3F&type=phone_number&app_absent=0" target="_blank">Falar no Whatsapp</a>
+                <a id="a2" href="#" target="_blank">Falar no Whatsapp</a>
             </div>
             </div>
         </section>
-         <section class="categorias1">
+         <!-- <section class="categorias1">
             <h1>Categorias</h1>
             <div class="subcategorias1">
                 <div class="c1div1">
@@ -83,7 +83,7 @@
                         </a>
                     </div>
             </div>
-        </section>
+        </section> -->
 
 
         
@@ -285,7 +285,7 @@
                         <p>
                             A SA Móveis e Eletro trabalha com produtos de qualidade, oferecendo entrega e montagem gratuitas, além de um atendimento proximo e confiável.
                         </p>
-                        <a href="#">Compra no Whatsapp</a>
+                        <a href="" id="a3">Compra no Whatsapp</a>
                     </div>
                     <div class="qs2">
                         <p>
@@ -300,6 +300,58 @@
                     </div>
         </section>
     </main>
+
+        <script>
+    document.getElementById('a2').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const linkProduto = window.location.href;
+
+        const mensagem = `
+        [❗Mensagem Teste - Não Responda❗]
+    👋 Olá! Vim pela *Página Inicial* do Site da *S.A MÓVEIS* e gostaria de atendimento para conhecer os produtos disponíveis.
+
+        `.trim();
+
+        const url = `https://api.whatsapp.com/send?phone=5586981373829&text=${encodeURIComponent(mensagem)}`;
+
+        window.open(url, '_blank');
+    });
+    </script>
+        <script>
+    document.getElementById('a3').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const linkProduto = window.location.href;
+
+        const mensagem = `
+        [❗Mensagem Teste - Não Responda❗]
+    👋 Olá! Vim pela *Página Inicial* do Site da *S.A MÓVEIS* e gostaria de atendimento para conhecer os produtos disponíveis.
+
+        `.trim();
+
+        const url = `https://api.whatsapp.com/send?phone=5586981373829&text=${encodeURIComponent(mensagem)}`;
+
+        window.open(url, '_blank');
+    });
+    </script>
+    <script>
+document.getElementById('lwtp').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const linkProduto = window.location.href;
+
+    const mensagem = `
+    [❗Mensagem Teste - Não Responda❗]
+👋 Olá! Vim pela *Página Inicial* do Site da *S.A MÓVEIS* e gostaria de atendimento para conhecer os produtos disponíveis.
+
+    `.trim();
+
+    const url = `https://api.whatsapp.com/send?phone=5586981373829&text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, '_blank');
+});
+</script>
     <footer style="text-align: center; font-size: 1.2em; background-color: rgb(255, 255, 255);  box-shadow: 0px 10px 10px rgb(0, 0, 0); max-width: 1500px; margin: 0 auto ; color: rgb(63, 63, 63); padding: 10px;">
         <p>&copy; 2026 SA - MÓVEIS E ELETRO - TODOS OS DIREITOS RESERVADOS</p>
     </footer>

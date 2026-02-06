@@ -58,12 +58,15 @@ header {
 
   border-radius: 10px;
     transition: 0.2s;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+    border: solid red 0.1px;
   
 }
 .btn-voltar:hover {
-     transform: scale(1.1);
-    box-shadow: 0 0px 5px var(--vermelho-sa);
+    transform: scaleX(1.02);
+    box-shadow: 0 0px 5px red;
+    border: solid rgba(0, 0, 0, 0.226) 1px;
+    
 }
 .material-symbols-outlined {
   font-size: clamp(20px, 4vw, 28px);
