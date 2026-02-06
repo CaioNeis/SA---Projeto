@@ -299,7 +299,7 @@ header {
 }
 
 .c1div1:hover, .c1div2:hover, .c1div3:hover, .c1div4:hover {
-    transform: scale(1.1);
+    transform: scale(0.95)
 }
 
 .categorias1 img {
@@ -320,8 +320,7 @@ header {
     font-family: var(--Black);
     font-weight: bolder;
     color: var(--vermelho-sa);
-    display: flex;
-    justify-content: left;
+    text-align: center;
     padding-left: 10px;
     margin: 30px;
 }
@@ -346,13 +345,12 @@ header {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.5s;
     background-color: #fff;
 }
 
 .c2div1:hover, .c2div2:hover, .c2div3:hover, .c2div4:hover {
-    transform: scale(1.1);
-    background-color: #fff;
+    transform: scale(0.95)
 }
 
 .c2div1 .produto, .c2div2 .produto, .c2div3 .produto, .c2div4 .produto {
