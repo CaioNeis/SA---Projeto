@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+:root {
+    --vermelho-sa: #d11333;        /* vermelho principal */
+    --azul-escuro-sa: #003087;     /* azul mais escuro */
+    --azul-medio-sa: #0047BB;      /* azul médio */
+    --branco: #FFFFFF;
+    --verdewp: #25D366;            /* Verde Whatsapp */
+    --verdeescuro: #17603c;
+    --ss: #d6c8a2;
+    --marrom: #8B5A2B;
+
+    --roboto: 'Roboto', sans-serif;
+    --Anton: 'Anton', sans-serif;
+    --Black: 'Archivo Black', sans-serif;
+}
