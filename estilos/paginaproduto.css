@@ -221,15 +221,13 @@ main {
 }
 .descricaop h2 {
     font-family: var(--roboto);
-    color: var(--vermelho-sa);
+    color: var(--azul-medio-sa);
     text-indent: 30px;
     font-size: 2em;
     margin: 20px 0px;
     
 }
-.descricaop ul {
-    columns: 2;
-}
+
 .descricaop li {
     font-size: 1.5em;
     color: rgb(82, 82, 82);
