@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Titan+One&display=swap');
 
 :root {
     --vermelho-sa: #d11333;        /* vermelho principal */
@@ -23,12 +24,15 @@
     --roboto: 'Roboto', sans-serif;
     --Anton: 'Anton', sans-serif;
     --Black: 'Archivo Black', sans-serif;
+    --Titan: 'Titan One', sans-serif;
+    --Archivo: 'Archivo Black', sans-serif;
+
 }
 
 header {
     
     padding: 15px 0px;
-    background-image: linear-gradient(to right, var(--vermelho-sa), #a10f27);
+    background-image: linear-gradient(to right, var(--azul-escuro-sa), var(--azul-medio-sa));
     border-radius: 10px;
     margin: 5px;
     margin-bottom: 10px;
@@ -41,7 +45,7 @@ header {
   gap: 8px;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.555);
 
-  background-color: var(--vermelho-sa);
+  background-color: var(--azul-medio-sa);
   color: var(--branco);
   text-decoration: none;
 
@@ -54,12 +58,12 @@ header {
   border-radius: 10px;
     transition: 0.2s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
-    border: solid red 0.1px;
+    border: solid var(--azul-medio-sa) 0.1px;
   
 }
 .btn-voltar:hover {
     transform: scaleX(1.02);
-    box-shadow: 0 0px 5px red;
+    box-shadow: 0 0px 5px var(--azul-escuro-sa);
     border: solid rgba(0, 0, 0, 0.226) 1px;
     
 }
@@ -76,9 +80,9 @@ body {
 }
 
 main {
-    
     margin: auto;
     max-width: 1400px;
+    
     
 }
 .bloco {
@@ -86,9 +90,10 @@ main {
     gap: 15px;
     margin: 10px;
     align-items: stretch;
+    
 }
 .info {
-    background-color: green;
+
 }
 .divh1 {
     
@@ -104,11 +109,12 @@ main {
     font-size: 3.5em;
     font-weight: 800;
     color: var(--azul-medio-sa);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
 }
 .mapa {
-    flex: 7;
+    flex: 5;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 3.6;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -139,9 +145,66 @@ main {
     .info {
         width: 100%;
     }
+    
 }
 @media (max-width: 560px) {
     .divh1 h1 {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
+    .info, .desc {
+        text-align: center;
+    }
+}
+.info .desc {
+    font-family: var(--roboto);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.4;       /* 🔥 diminui a altura */
+    margin-bottom: 12px;   /* controla o espaço */
+}
+.info .desc2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    line-height: 1.4; 
+}
+
+.moveis {
+    color: var(--azul-medio-sa);
+    font-weight: bolder;
+}
+.eletro {
+    color: var(--vermelho-sa);
+    font-weight: bolder;
+}
+.span {
+    color: var(--azul-medio-sa);
+    font-size: 1.3em;
+}
+.aside {
+    font-family: var(--roboto);
+
+    text-align: justify;
+    font-size: 1.4em;
+    margin-top: 10px; 
+    line-height: 1.4;
+}
+.divlc {
+    margin-top: 20px;
+}
+.imglc {
+    display: block;
+    margin: auto;
+    width: 120px;
+}
+footer {
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--azul-escuro-sa), var(--azul-medio-sa));
+    color: white;
+    font-family: var(--roboto);
+    font-size: 0.9rem;
+    border-radius: 10px;
+    
 }

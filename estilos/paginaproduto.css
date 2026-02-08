@@ -408,10 +408,14 @@ main {
 
 
 footer {
+    margin-top: 30px;
+    padding: 15px;
     text-align: center;
-    font-size:1.2em; 
-    color:#5f5f5ffd; 
-    padding:10px;
+    background-image: linear-gradient(to right, var(--vermelho-sa), #a10f27);
+    color: white;
+    font-family: var(--roboto);
+    font-size: 0.9rem;
+    border-radius: 10px;
 }
 @media (max-width: 768px) {
     footer {
