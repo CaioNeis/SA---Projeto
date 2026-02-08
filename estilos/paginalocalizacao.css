@@ -109,7 +109,7 @@ main {
     font-size: 3.5em;
     font-weight: 800;
     color: var(--azul-medio-sa);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.250);
 }
 .mapa {
     flex: 5;
